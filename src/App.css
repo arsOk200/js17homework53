@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.form{
+  margin:0 40px;
+  padding: 20px;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+  width:50%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.tasks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.task{
+  border: 1px solid black;
+  margin: 10px ;
+  width: 50%;
+  background-color: #718abe;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn{
+  padding: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: #b20000;
+}
