@@ -1,10 +1,18 @@
 import React from 'react';
 
-const Task = () => {
+interface TaskProps{
+  task:string;
+  id:string;
+  onDeleteTask:React.MouseEventHandler;
+}
+
+const Task:React.FC<TaskProps> = props => {
   return (
       <div className='task'>
-        <p>llalalala</p>
-        <button className="btn">delete</button>
+        <div>
+          <p>{props.task}</p>
+        </div>
+        <button className="btn" onClick={props.onDeleteTask}>delete</button>
       </div>
 
     );
