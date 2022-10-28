@@ -35,7 +35,6 @@ function App() {
   function deleteTask(id:string) {
     const index = tasks.findIndex(p => p.id ===id);
     const tasksCopy = [...tasks];
-    console.log('deleted '+id);
     tasksCopy.splice(index, 1);
     setTasks(tasksCopy);
   }
