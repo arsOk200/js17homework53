@@ -5,7 +5,6 @@ interface formProps {
   addTask:React.MouseEventHandler;
 }
 
-
 const TaskForm:React.FC<formProps> = props => {
     return (
       <div className="form-wrapper">

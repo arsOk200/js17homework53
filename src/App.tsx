@@ -21,19 +21,16 @@ function App() {
 
   const currentValue = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
-
   };
   const addTask = (e:any) =>{
-    e.preventDefault()
+    e.preventDefault();
     setTasks([
       ...tasks, {
         id:randomId(),
         text:String(value),
       }
     ]);
-  }
-
-
+  };
 
   function deleteTask(id:string) {
     const index = tasks.findIndex(p => p.id ===id);
